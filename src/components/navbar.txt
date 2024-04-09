@@ -1,0 +1,63 @@
+ <li>SHOP</li>
+        <li>
+          <ul className="dropdown">
+            <li>
+              {navbarLinks.map((e) => (
+                <div key={e.title} className="navbar__link">
+                  <h3 className=" font-bold">{e.title}</h3>
+                  {e.link.map((item) => {
+                    return (
+                      <Link
+                        key={item.title}
+                        href={item.url}
+                        className=" link text-gray-500"
+                      >
+                        {item.title}
+                      </Link>
+                    );
+                  })}
+                </div>
+              ))}
+            </li>
+          </ul>
+        </li>
+
+
+
+        
+        {/* for men */}
+        <li>Men</li>
+        <li>
+          <ul>
+            <li>viewall</li>
+          </ul>
+        </li>
+        {/* for women */}
+        <li>Women</li>
+        <li>
+          <ul>
+            <li>viewall</li>
+          </ul>
+        </li>
+        {/* accessories */}
+        <li>Accessories</li>
+        <li>
+          <ul>
+            <li>viewall</li>
+          </ul>
+        </li>
+        {/* characters */}
+        <li>Character</li>
+        <li>
+          <ul>
+            <li>viewall</li>
+          </ul>
+        </li>
+        {/* artistmech */}
+        <li>Artist Merchandise</li>
+        <li>
+          <ul>
+            <li>viewall</li>
+          </ul>
+        </li>
+      </ul>
