@@ -624,3 +624,61 @@ export const pressSlide = [
     url: '/images/press/lbb-logo-130x100.webp',
   },
 ];
+export const featuredCategorySlides = [
+  {
+    title: 't-shirt',
+    url: '/images/featured category/drop-cut-t-shirts-india-featured-480x480.webp',
+  },
+  {
+    title: 'over sized',
+    url: '/images/featured category/oversized-t-shirts-india-featured-480x480.webp',
+  },
+  {
+    title: 'women t-shirt',
+    url: '/images/featured category/womens-oversized-t-shirts-featured-480x480.webp',
+  },
+  {
+    title: 'stickers',
+    url: '/images/featured category/featured-category-stickers-23-480x480.webp',
+  },
+  {
+    title: 'mobile covers',
+    url: '/images/featured category/featured-category-phone-cases-23-480x480.webp',
+  },
+  {
+    title: 'coasters',
+    url: '/images/featured category/featured-category-coasters-23-480x480.webp',
+  },
+  {
+    title: 'socks',
+    url: '/images/featured category/featured-category-socks-23-480x480.webp',
+  },
+  {
+    title: 'sweat shirt',
+    url: '/images/featured category/hoodies-india-featured-480x480.webp',
+  },
+  {
+    title: 'drop cut',
+    url: '/images/featured category/drop-cut-t-shirts-india-featured-480x480.webp',
+  },
+  {
+    title: 'women oversized t-shirts',
+    url: '/images/featured category/womens-oversized-t-shirts-featured-480x480.webp',
+  },
+  {
+    title: 'mugs',
+    url: '/images/featured category/featured-category-mugs-23-480x480.webp',
+  },
+  {
+    title: 'posters',
+    url: '/images/featured category/featured-category-posters-23-480x480.webp',
+  },
+  {
+    title: 'basketball caps',
+    url: '/images/featured category/featured-category-baseball-caps-23-480x480.webp',
+  },
+  {
+    title: 'masks',
+    url: '/images/featured category/featured-category-masks-23-480x480.webp',
+  },
+];

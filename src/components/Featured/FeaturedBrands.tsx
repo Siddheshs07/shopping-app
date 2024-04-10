@@ -34,7 +34,7 @@ const FeaturedBrands = () => {
         showDots={false}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={4000}
         arrows={false}
         className='p-6'
       >

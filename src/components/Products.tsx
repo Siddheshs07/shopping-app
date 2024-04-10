@@ -14,7 +14,7 @@ const Products = () => {
               alt={e.name}
               width={200}
               height={200}
-              className='p-4 w-50 h-48'
+              className='p-4 w-80 h-96 rounded-[2.5rem]'
             />
           </div>
           <div className=' text-justify'>
