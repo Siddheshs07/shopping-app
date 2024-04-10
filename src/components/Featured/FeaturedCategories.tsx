@@ -1,7 +1,5 @@
-import React from "react";
-
 const FeaturedCategories = () => {
-  return <div>FeaturedCategories</div>;
+  return <div>Featured Categories</div>;
 };
 
 export default FeaturedCategories;
