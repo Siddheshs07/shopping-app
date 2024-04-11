@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { topBannerSlides } from '@/constants';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Link from 'next/link';
 const TopBanner = () => {
   const slides = topBannerSlides;
   const responsive = {
@@ -33,13 +34,15 @@ const TopBanner = () => {
         arrows={false}
       >
         {slides.map((e) => (
-          <Image
-            src={e.url}
-            alt={e.title}
-            width={150}
-            height={75}
-            key={e.title}
-          />
+          <Link href='/'>
+            <Image
+              src={e.url}
+              alt={e.title}
+              width={150}
+              height={75}
+              key={e.title}
+            />
+          </Link>
         ))}
       </Carousel>
     </div>

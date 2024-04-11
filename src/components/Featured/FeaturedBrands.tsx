@@ -2,6 +2,7 @@
 
 import { featuredBrandsSlides } from '@/constants';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -39,14 +40,16 @@ const FeaturedBrands = () => {
         className='p-6'
       >
         {slides.map((e) => (
-          <Image
-            src={e.url}
-            alt={e.title}
-            width={150}
-            height={75}
-            key={e.title}
-            className='rounded-3xl ml-6'
-          />
+          <Link href='/'>
+            <Image
+              src={e.url}
+              alt={e.title}
+              width={150}
+              height={75}
+              key={e.title}
+              className='rounded-3xl ml-6'
+            />
+          </Link>
         ))}
       </Carousel>
     </div>

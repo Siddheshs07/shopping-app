@@ -1,6 +1,7 @@
 'use client';
 import { featuredCategorySlides } from '../../constants/index';
 import Image from 'next/image';
+import Link from 'next/link';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -39,15 +40,17 @@ const FeaturedCategories = () => {
       >
         {slides.map((e) => (
           <div className='flex flex-col justify-center items-center '>
-            <Image
-              src={e.url}
-              alt={e.title}
-              width={150}
-              height={75}
-              key={e.title}
-              className='rounded-full'
-            />
-            <p className='font-bold uppercase text-center'>{e.title}</p>
+            <Link href='/'>
+              <Image
+                src={e.url}
+                alt={e.title}
+                width={150}
+                height={75}
+                key={e.title}
+                className='rounded-full'
+              />
+              <p className='font-bold uppercase text-center'>{e.title}</p>
+            </Link>
           </div>
         ))}
       </Carousel>

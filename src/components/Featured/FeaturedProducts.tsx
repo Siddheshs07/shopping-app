@@ -2,6 +2,7 @@ import React from 'react';
 import Products from '../Products';
 import { getFeaturedProducts } from '../../../data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FeaturedProducts = () => {
   let featuredCloths = getFeaturedProducts();
@@ -14,13 +15,15 @@ const FeaturedProducts = () => {
         {featuredCloths.map((e) => (
           <div className='flex flex-col justify-center items-center border border-gray-400 rounded-3xl bg-zinc-200 p-2'>
             <div className='flex justify-center'>
-              <Image
-                src={e.link}
-                alt={e.name}
-                width={400}
-                height={600}
-                className='p-4 w-80 h-96 rounded-[2.5rem]'
-              />
+              <Link href={e.link}>
+                <Image
+                  src={e.link}
+                  alt={e.name}
+                  width={400}
+                  height={600}
+                  className='p-4 w-80 h-96 rounded-[2.5rem]'
+                />
+              </Link>
             </div>
             <div className=' text-justify mb-2'>
               <h1 className='font-bold'>{e.name}</h1>

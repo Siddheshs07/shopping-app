@@ -4,6 +4,7 @@ import Carousel from 'react-material-ui-carousel';
 import { mainBannerSlides } from '../constants/index';
 import Image from 'next/image';
 import { GrCaretNext, GrCaretPrevious } from 'react-icons/gr';
+import Link from 'next/link';
 
 const MainBanner = () => {
   const slides = mainBannerSlides;
@@ -19,13 +20,15 @@ const MainBanner = () => {
         PrevIcon={<GrCaretPrevious />}
       >
         {slides.map((e) => (
-          <Image
-            src={e.url}
-            alt={e.title}
-            width={1920}
-            height={450}
-            key={e.title}
-          />
+          <Link href='/'>
+            <Image
+              src={e.url}
+              alt={e.title}
+              width={1920}
+              height={450}
+              key={e.title}
+            />
+          </Link>
         ))}
       </Carousel>
     </div>
