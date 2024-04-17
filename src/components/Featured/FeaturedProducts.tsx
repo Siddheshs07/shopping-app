@@ -11,25 +11,25 @@ const FeaturedProducts = () => {
       <h1 className='text-2xl font-bold uppercase mb-5 mt-3 text-center '>
         Featured Products
       </h1>
-      <div className='grid grid-cols-4 gap-3 max-sm:grid-cols-1 max-md:grid-cols-3'>
+      <div className='grid grid-cols-5 gap-5 max-sm:grid-cols-1 max-md:grid-cols-3'>
         {featuredCloths.map((e) => (
-          <div className='flex flex-col justify-center items-center border border-gray-400 rounded-3xl bg-zinc-200 p-2'>
-            <div className='flex justify-center'>
-              <Link href={e.link} key={e.id}>
+          <div className='flex flex-col justify-center items-center  p-2 m-0'>
+            <Link href={e.link} key={e.id}>
+              <div className='flex justify-center'>
                 <Image
                   src={e.link}
                   alt={e.name}
                   width={400}
                   height={600}
-                  className='p-4 w-80 h-96 rounded-[2.5rem]'
+                  className=' w-80 h-96 rounded-[2.5rem]'
                 />
-              </Link>
-            </div>
-            <div className=' text-justify mb-2'>
-              <h1 className='font-bold'>{e.name}</h1>
-              <span>{e.description}</span>
-              <p> RS. {e.finalPrice} </p>
-            </div>
+              </div>
+              <div className=' text-center  <Link href={e.link} key={e.id}> mb-2'>
+                <h1 className='font-bold'>{e.name}</h1>
+                <span>{e.description}</span>
+                <p> RS. {e.finalPrice} </p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

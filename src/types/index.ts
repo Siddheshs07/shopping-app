@@ -1,13 +1,14 @@
 export interface dataProps {
-    cat: string;
-    folded: string;
-    gender: string;
-    name: string;
-    description: string;
-    finalPrice: string;
-    strickPrice: string;
-    discount: number;
-    productSize: string;
-    link: string;
-    otherImages: string[];
+  id: number;
+  folded: string;
+  gender: string;
+  brandName: string;
+  description: string;
+  finalPrice: string;
+  strickPrice: string;
+  discount: number;
+  productSize: string;
+  link: string;
+  isFeatured: boolean;
+  message: string;
 }

@@ -24,7 +24,7 @@ const TopBanner = () => {
     },
   };
   return (
-    <div>
+    <div className='m-3'>
       <Carousel
         responsive={responsive}
         showDots={false}

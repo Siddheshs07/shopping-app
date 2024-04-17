@@ -9,7 +9,7 @@ import Link from 'next/link';
 const MainBanner = () => {
   const slides = mainBannerSlides;
   return (
-    <div>
+    <div className=' m-2'>
       <Carousel
         indicators={false}
         autoPlay={true}

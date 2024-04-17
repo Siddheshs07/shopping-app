@@ -6,19 +6,19 @@ import { FaLocationDot, FaCartArrowDown } from 'react-icons/fa6';
 const Navbar = () => {
   return (
     <>
-      <nav className='flex items-center justify-between p-3 bg-white text-gray-800 shadow-sm'>
-        <div className='flex items-center '>
-          <Link href='/'>
-            <h1
-              className='text-4xl text-white bg-red-500 font-bold 
+      <nav className=' p-3  bg-white text-gray-800 shadow-sm'>
+        <ul className='flex items-center justify-between'>
+          <li>
+            <Link href='/'>
+              <h1
+                className='text-4xl text-white bg-red-500 font-bold 
             hover:text-red-500 hover:bg-white  '
-            >
-              REDWOLF
-            </h1>
-            {/* <Image src='/images/logo.webp' width={140} height={60} alt='logo' /> */}
-          </Link>
-        </div>
-        <ul className='flex space-x-10'>
+              >
+                REDWOLF
+              </h1>
+              {/* <Image src='/images/logo.webp' width={140} height={60} alt='logo' /> */}
+            </Link>
+          </li>
           <li>
             <Link href='/' className='text-gray-600 hover:text-gray-800'>
               Shop
